@@ -79,3 +79,11 @@ html {
     justify-content: center;
     text-decoration: underline;
 }
+
+a {
+     color: #000000; text-decoration: none;
+}
+
+a:hover {
+    color :#000000; text-decoration:none; cursor:pointer;
+}
