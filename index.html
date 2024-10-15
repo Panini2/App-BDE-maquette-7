@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App - BDE</title>
+    <!-- Link to 7.css -->
+    <link rel="stylesheet" href="https://unpkg.com/7.css/dist/7.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">Connectez-vous</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <form class="form">
+                    <p class="msg">Connectez-vous pour accéder à toutes nos fonctionnalités.</p>
+                    <div class="field">
+                        <label for="pseudo" class="field-label">Pseudo</label>
+                        <input id="pseudo" autocomplete="off" placeholder="Pseudo" class="input-field" type="text">
+                    </div>
+                    <div class="field">
+                        <label for="password" class="field-label">Mot de passe</label>
+                        <input id="password" placeholder="Mot de passe" class="input-field" type="password">
+                    </div>
+                    <div class="btn">
+                        <button class="button">Connexion</button>
+                        <button class="button">Inscription</button>
+                    </div>
+                    <p class="link">Mot de passe oublié</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
