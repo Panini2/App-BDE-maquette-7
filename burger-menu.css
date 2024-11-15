@@ -1,0 +1,187 @@
+:root {
+    --window-background-color: rgba(255, 255, 255, 0.25) !important;
+    --window-background: --window-background-color transparent !important;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url("./windows-7-wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.start-button {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+}
+
+.start-button div {
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.start-normal {
+    background-image: url('./W7.png');
+    opacity: 1;
+}
+
+.start-hover {
+    background-image: url('./W7H.png');
+    opacity: 0;
+}
+
+.start-click {
+    background-image: url('./W7C.png');
+    opacity: 0;
+}
+
+.start-button:hover .start-normal {
+    opacity: 0;
+}
+
+.start-button:hover .start-hover {
+    opacity: 1;
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 20px;
+    left: -5px;
+    width: 110%;
+    height: 25px;
+    z-index: 0;
+}
+
+.start-menu {
+    position: fixed !important;
+    bottom: 44px;
+    height:55vh;
+    width: 60vh;
+    z-index: 0 !important;
+    padding-top: 7px;
+    padding-bottom: 14px;
+    padding-left: 7px;
+    --window-background-color: transparent;
+    background: rgba(52,58,87,1);
+    background: linear-gradient(0deg, rgba(52,58,87,0.40) 0%, rgba(52,58,87,0.7) 50%, rgba(52,58,87,0.40) 100%); 
+}
+
+.my-list {
+    border-radius: 3px;
+    width: 50%;
+    height: 100%;
+}
+
+.my-list li img{
+    height: 20px;
+    margin-left: 2px;
+}
+
+.my-list li a {
+    height: 40px !important;
+    padding-top: 10px !important;
+}
+
+ul[role="menu"]:before {
+    box-shadow: inset 1px 0 rgba(0,0,0,0) !important;
+}
+
+.pfp {
+    position: fixed !important;
+    bottom: 500px;
+    left: 19vw;
+    height: 6vw;
+    width: 6vw;
+    z-index: 2 !important;
+    padding-top: 0.3vw;
+    padding-right: 0.3vw;
+}
+
+.pfp img {
+    height: 90%;
+
+}
+
+.offscreen-menu {
+    opacity: 0; 
+    transition: all 0.2s ease;
+}
+
+.offscreen-menu.active {
+    opacity: 1 !important;
+}
+
+.profile-list {
+    border-radius: 3px;
+    width: 42%;
+    height: 100%;
+    left: 300px;
+    bottom: 430px;    
+}
+
+:root .profile-list {
+    --surface: transparent !important;
+    --item-hover-background: linear-gradient(180deg,rgba(255, 255, 255, 0.048),#e6ecf542 90%,rgba(255, 255, 255, 0.39)) !important;
+    border: solid 1px transparent;
+    box-shadow: none;
+    color: white;
+}
+
+.profile-list li {
+    border: solid 1px transparent !important;
+    height: 10%;
+}
+
+.profile-list li a {
+    height: 30px !important;
+    box-shadow: inset 0px -1px rgba(175, 175, 175, 0.137),inset 0px -3px #61616110 !important;
+    border-radius: 0px !important;
+}
+
+.profile-list li a:hover {
+    height: 30px !important;
+    box-shadow: transparent !important;
+    border-radius: 3px !important;
+    border: solid 1px #00000033 !important;
+}
+
+.app a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.app img {
+    height: 60%;
+}
+
+.app {
+    margin: 15px;
+    height: 5vh;
+    width: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    text-shadow: 1px 1px 2px black;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.app:hover {
+    background: linear-gradient(0deg,rgba(255, 255, 255, 0.11),#e6ecf563 60%,rgba(255, 255, 255, 0.589));
+    box-shadow: inset 0 0 0 1px rgba(174, 229, 255, 0.801);
+}
